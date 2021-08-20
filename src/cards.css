@@ -4,6 +4,9 @@ html {
     color: #2F3442;
     height: 100%;
     background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon {color: #BCD2DA;}
@@ -55,12 +58,13 @@ html {
 .cardGroup {
     /* display */
     display: flex;
-    flex-direction: row;
-    width: 320px;
+    flex-direction: column;
+    width: 262px;
     margin: auto;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
+    height: 459px;
   }
   
     .cardGroup__card {
@@ -84,8 +88,10 @@ html {
       
     }
 
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: 718px) {
       .cardGroup {
+        flex-direction: row;
        width: 710px;
+       height: auto;
       }
     }
